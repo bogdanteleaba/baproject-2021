@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tips & Tricks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-col>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="tertiary" *ngFor="let tip of loadedTips.slice(1)" [routerLink]="['/', 'tips-tricks', 'read', tip]">
+            <ion-img [src]="tip.imageUrl"></ion-img>
+            <ion-card-header>
+              <ion-card-title>
+                {{ tip.title }}
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p> {{ tip.description }}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-col>
+</ion-content>

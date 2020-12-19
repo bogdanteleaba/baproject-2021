@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "future-265e7",
+    "4future": "future-265e7"
+  },
+  "targets": {
+    "future-265e7": {
+      "hosting": {
+        "baproject-2021": [
+          "future-265e7",
+          "future265e7"
+        ]
+      }
+    }
+  }
+}

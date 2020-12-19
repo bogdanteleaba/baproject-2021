@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>My Plans</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content padding>
+    <ion-col>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="profile" id="profile" color="tertiary">
+              <ion-card-header>
+                <ion-card-title></ion-card-title>
+                <ion-card-subtitle></ion-card-subtitle>
+              </ion-card-header>
+              <ion-img></ion-img>
+              <ion-card-content>
+                <p></p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+              <div class="vertical-align">
+                <h2>Bogdan Teleabă</h2>
+                <p> 23 Years Old</p>
+              </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-card class="myworkouts" [routerLink]="['/', 'my-plans', 'my-workouts']">
+              <ion-card-header>
+                <ion-card-title class="whitetext">My Workouts</ion-card-title>
+                <ion-card-subtitle class="whitetext">Looks Like you have some workouts here.</ion-card-subtitle>
+              </ion-card-header>
+              <ion-img></ion-img>
+              <ion-card-content>
+                <p class="greentext">Check it out!</p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="mymeals" [routerLink]="['/', 'my-plans', 'my-meals']">
+              <ion-card-header>
+                <ion-card-title class="whitetext">My Meal Plans</ion-card-title>
+                <ion-card-subtitle class="whitetext">Dont forget to eat healthy!</ion-card-subtitle>
+              </ion-card-header>
+              <ion-img></ion-img>
+              <ion-card-content>
+                <p class="greentext">Check it out!</p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-card class="feedback" [routerLink]="['/', 'my-plans', 'feedback']">
+              <ion-card-header>
+                <ion-card-title class="whitetext">Feedback your trainer</ion-card-title>
+                <ion-card-subtitle class="whitetext">Why not leaving a feedback?</ion-card-subtitle>
+              </ion-card-header>
+              <ion-img></ion-img>
+              <ion-card-content>
+                <p class="greentext">Check it out!</p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-col>
+</ion-content>

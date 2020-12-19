@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">4Future</string>
+    <string name="title_activity_main">4Future</string>
+    <string name="package_name">com.4future.fitnessapp</string>
+    <string name="custom_url_scheme">com.4future.fitnessapp</string>
+</resources>

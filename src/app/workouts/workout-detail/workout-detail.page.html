@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/workouts"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Workout Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content><ion-col size-sm="6" offset-sm="3">
+  <ion-button
+          type="button"
+          color="secondary"
+          expand="block"
+          (click)="onCompleteWorkout()"
+        >
+          Workout Complete
+        </ion-button>
+</ion-col>
+</ion-content>

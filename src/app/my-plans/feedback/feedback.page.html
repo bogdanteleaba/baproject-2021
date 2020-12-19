@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/my-plans"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col id="feedback">
+      <ion-list>
+        <ion-item>
+          <ion-textarea  rows="5" maxLength="500" placeholder="Feedback your trainer..."></ion-textarea>
+        </ion-item>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-button color="secondary" expand="block" [routerLink]="['/', 'my-plans']">Send</ion-button>
+    </ion-col>
+    </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>

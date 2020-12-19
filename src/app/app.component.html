@@ -1,3 +1,35 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-app> 
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          4Future
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app> 
+
+ <ion-tabs class="navbar"> 
+  <ion-tab-bar slot="bottom" color="primary" class="color">
+    <ion-tab-button  routerLink="/workouts">
+      <ion-label color="tertiary"  >Workouts</ion-label>
+      <ion-icon  color="tertiary" name="stopwatch"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/nutrition">
+      <ion-label color="tertiary">Nutrition</ion-label>
+      <ion-icon  color="tertiary" name="restaurant"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/tips-tricks">
+      <ion-label color="tertiary" >Tips & Tricks</ion-label>
+      <ion-icon color="tertiary" name="pulse"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button routerLink="/my-plans">
+      <ion-label color="tertiary" >My plans</ion-label>
+      <ion-icon color="tertiary" name="calendar"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button (click)="onLogout()">
+      <ion-label color="tertiary" >Log Out</ion-label>
+      <ion-icon color="tertiary" name="exit"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> 

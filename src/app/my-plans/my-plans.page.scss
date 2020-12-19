@@ -1,0 +1,44 @@
+
+.profile{
+    background-image: url("https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+    border-radius: 50%;
+    width:120px;
+    height:120px;
+    border:1px solid #d7fe4e;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myworkouts{
+    margin: 0;
+    padding:0; border:1px solid #d7fe4e;
+    height:250px;
+}
+
+.mymeals{
+    margin: 0;
+    padding:0;
+    border:1px solid #d7fe4e;
+    color:white;
+    height:250px;
+}
+
+.feedback {
+    margin: 0;
+    padding:0;border:1px solid #d7fe4e;
+    height:250px;
+}
+
+.vertical-align{
+    vertical-align:middle;
+}
+
+.whitetext{
+    color:white;
+}
+
+.greentext{
+    color:#d7fe4e;
+    font-weight:500;
+    font-size:15px;
+}
